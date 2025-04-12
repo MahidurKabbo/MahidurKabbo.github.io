@@ -1,0 +1,135 @@
+[data-bs-theme='dark'] {
+    //theme
+    --tc-theme-primary-1: var(--tc-theme-dark-primary-1);
+    --tc-theme-primary-2: var(--tc-theme-dark-primary-2);
+    --tc-theme-primary-3: var(--tc-theme-dark-primary-3);
+    --tc-theme-secondary-1: var(--tc-theme-dark-secondary-1);
+    --tc-theme-secondary-2: var(--tc-theme-dark-secondary-2);
+    --tc-theme-secondary-3: var(--tc-theme-dark-secondary-3);
+    //neutral
+    --tc-neutral-0: var(--tc-neutral-dark-0);
+    --tc-neutral-100: var(--tc-neutral-dark-100);
+    --tc-neutral-200: var(--tc-neutral-dark-200);
+    --tc-neutral-300: var(--tc-neutral-dark-300);
+    --tc-neutral-400: var(--tc-neutral-dark-400);
+    --tc-neutral-500: var(--tc-neutral-dark-500);
+    --tc-neutral-600: var(--tc-neutral-dark-600);
+    --tc-neutral-700: var(--tc-neutral-dark-700);
+    --tc-neutral-800: var(--tc-neutral-dark-800);
+    --tc-neutral-900: var(--tc-neutral-dark-900);
+    --tc-neutral-1000: var(--tc-neutral-dark-1000);
+    //system
+    --tc-system-success: var(--tc-system-dark-success);
+    --tc-system-info: var(--tc-system-dark-info);
+    --tc-system-warning: var(--tc-system-dark-warning);
+    --tc-system-danger: var(--tc-system-dark-danger);
+    --tc-system-dark: var(--tc-system-dark-dark);
+    --tc-system-muted: var(--tc-system-dark-muted);
+    //border
+    --tc-border-1: var(--tc-border-dark-1);
+    --tc-border-2: var(--tc-border-dark-2);
+    //bg
+    --tc-bg-1: var(--tc-bg-dark-1);
+    --tc-bg-2: var(--tc-bg-dark-2);
+    --tc-bg-3: var(--tc-bg-dark-3);
+    --tc-bg-4: var(--tc-bg-dark-4);
+    --tc-bg-5: var(--tc-bg-dark-5);
+    --tc-bg-6: var(--tc-bg-dark-6);
+    --tc-bg-7: var(--tc-bg-dark-7);
+    //gradient
+    --tc-linear-1: var(--tc-linear-dark-1);
+    --tc-linear-2: var(--tc-linear-dark-2);
+    --tc-linear-3: var(--tc-linear-dark-3);
+    --tc-linear-4: var(--tc-linear-dark-4);
+    --tc-linear-5: var(--tc-linear-dark-5);
+    //shadow
+    --tc-shadow-1: var(--tc-shadow-dark-1);
+    --tc-shadow-2: var(--tc-shadow-dark-2);
+    //CUSTOM CLASS
+    body {
+        background: var(--tc-neutral-1000);
+        &.home-page-2 {
+            background: var(--tc-bg-5);
+        }
+        &.home-page-3 {
+            background: var(--tc-bg-4);
+        }
+    }
+    .navbar {
+        background-color: var(--tc-bg-2);
+        .navbar-social {
+            a {
+                &:hover {
+                    color: var(--tc-theme-primary-1);
+                }
+            }
+        }
+        &.navbar-home-2 {
+            background-color: var(--tc-bg-3);
+            .navbar-social {
+                a {
+                    &:hover {
+                        color: var(--tc-theme-primary-2);
+                    }
+                }
+            }
+        }
+        &.navbar-home-3 {
+            background-color: transparent;
+            .navbar-social {
+                a {
+                    &:hover {
+                        color: var(--tc-theme-primary-3);
+                    }
+                }
+            }
+            .dark-light-switcher {
+                background: transparent;
+            }
+        }
+    }
+    .section-hero-2 {
+        .background {
+            .bg-w {
+                display: none;
+            }
+            .bg-d {
+                display: block;
+            }
+        }
+    }
+    .brand-logo {
+        background-color: var(--tc-neutral-800);
+        &:hover {
+            background-color: #242424;
+            border: 0px !important;
+        }
+    }
+    .bg-overlay {
+        background: linear-gradient(180deg, rgba(39, 39, 48, 0) 0%, #272730 100%);
+    }
+    .backdrop-filter {
+        background: rgba(17, 17, 17, 0.5);
+        box-shadow:
+            1.313px 1.969px 0px 0px rgba(70, 69, 69, 0.6) inset,
+            -12.177px 36.69px 44.901px 0px rgba(127, 124, 168, 0.18);
+        backdrop-filter: blur(8.028975486755371px);
+    }
+    .filter-invert {
+        filter: invert(100%);
+    }
+    .filter-gray {
+        filter: grayscale(100%);
+    }
+    .mask-image-2 {
+        height: 0;
+    }
+    .section-newsletter-3 {
+        .bg-4 {
+            background-color: var(--tc-neutral-200) !important;
+        }
+    }
+    .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.has-children .menu-expand i {
+        background: url(../imgs/template/icons/arrow-right-big-dark.svg) no-repeat center;
+    }
+}

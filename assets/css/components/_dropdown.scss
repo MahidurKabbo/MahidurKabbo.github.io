@@ -1,0 +1,118 @@
+// Dropdown menu
+
+.dropdown-menu {
+    line-height: 1.5rem;
+    // color: var(--tc-neutral-500);
+    border: none;
+    box-shadow: var(--tc-shadow-1);
+    border-radius: 0.5rem;
+    z-index: 1021;
+    padding: 1rem 0rem;
+}
+
+// Dropdown header
+.dropdown-header {
+    color: var(--tc-neutral-800);
+    padding: 0.25rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+// Dropdown text
+.dropdown-text {
+    padding: 0.25rem 1.2rem;
+    color: var(--tc-neutral-500);
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+// Dropdown item
+.dropdown-item {
+    padding: 0.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+// Dropdown menu sizes
+.dropdown-menu-xs {
+    min-width: 8rem !important;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu-md {
+    min-width: 17rem !important;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu-lg {
+    min-width: 22rem !important;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu-xl {
+    min-width: 24rem !important;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu-xxl {
+    min-width: 40rem !important;
+    border-radius: 0.5rem;
+}
+.dropdown-mega-menu {
+    min-width: 1140px !important;
+    border-radius: 0.5rem;
+}
+
+// Dropdown toggle arrow
+.dropdown-toggle::after {
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    font-family: "bootstrap-icons" !important;
+    content: "\F282";
+    border-top: 0rem;
+    border-right: 0rem;
+    border-bottom: 0;
+    border-left: 0rem;
+    float: right;
+}
+
+// Dropup
+.dropup .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    font-family: "bootstrap-icons" !important;
+    content: "\e931";
+    border-top: 0rem;
+    border-right: 0rem;
+    border-bottom: 0;
+    border-left: 0rem;
+}
+
+// Dropright
+.dropend .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    font-family: "Feather" !important;
+    content: "\e930";
+    border-top: 0rem;
+    border-right: 0rem;
+    border-bottom: 0;
+    border-left: 0rem;
+}
+
+// Dropleft
+.dropstart .dropdown-toggle::before {
+    display: inline-block;
+    margin-right: 0.255em;
+    font-family: "Feather" !important;
+    content: "\e92f";
+    border-top: 0rem;
+    border-right: 0rem;
+    border-bottom: 0;
+    border-left: 0rem;
+}

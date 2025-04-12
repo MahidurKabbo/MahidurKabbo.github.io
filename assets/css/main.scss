@@ -1,0 +1,56 @@
+/*===========
+   Theme Name: AliThemes - Bootstrap Dev Starter
+   Author : alithemes
+   Support: https://alithemes.ticksy.com
+   Version: 1.0
+=======
+Table of contents
+    01. Theme Default CSS
+    02. Header
+    03. Mobile Menu
+    04. Banner
+    05. Slider
+    06. About
+    07. Services
+    08. Choose
+    09. Project
+    10. Pricing
+    11. Request
+    12. Consulting
+    13. Testimonial
+    14. Features
+    15. Marquee
+    16. Fact
+    17. Team
+    18. Call-back
+    19. Blog
+    20. Contact
+    21. Brand
+    22. 404 Error
+    23. Footer
+==============*/
+// theme utilitiles
+@import 'utils/breakpoints';
+@import 'utils/root';
+// Components
+@import 'components/reboot';
+@import 'components/animation';
+@import 'components/buttons';
+@import 'components/collapse';
+@import 'components/dropdown';
+@import 'components/typography';
+@import 'components/colors';
+@import 'components/imageRevealHover';
+@import 'components/mobile-menu';
+@import 'components/form';
+@import 'components/hero';
+@import 'components/offcanvas';
+@import 'components/navbar';
+@import 'components/preloader';
+@import 'customize';
+@import 'components/other';
+@import 'components/responsive';
+@import 'sections/footer-1';
+@import 'sections/home-page-2';
+@import 'sections/home-page-3';
+@import 'components/dark-mode';

@@ -1,0 +1,21 @@
+// Accordion scss
+// accordion icon
+.accordions-icon > a:before {
+    font-family: bootstrap-icons;
+    content: "\F2EA";
+    padding-right: 16px;
+    font-size: 20px;
+}
+// Expanded
+.accordions-icon > a.collapsed:before {
+    content: "\F4FE";
+}
+// Collapse
+.chevron-arrow {
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+// Expanded
+[aria-expanded="true"] .chevron-arrow {
+    transform: rotate(-180deg);
+}

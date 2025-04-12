@@ -1,0 +1,47 @@
+.section-footer {
+    .navigation {
+        a {
+            color: var(--tc-neutral-0);
+            &:hover {
+                color: var(--tc-theme-primary-1);
+            }
+        }
+    }
+}
+.section-footer-2 {
+    .main-logo {
+        span {
+            font-family: 'DM Mono';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background: var(--tc-linear-5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .navigation {
+        a {
+            color: var(--tc-neutral-0);
+            opacity: 0.5;
+            &:hover {
+                color: var(--tc-neutral-0);
+                opacity: 1;
+            }
+        }
+    }
+}
+.section-footer-3 {
+    .navigation {
+        a {
+            color: var(--tc-neutral-0);
+            opacity: 0.5;
+            &:hover {
+                color: var(--tc-neutral-0);
+                opacity: 1;
+            }
+        }
+    }
+}

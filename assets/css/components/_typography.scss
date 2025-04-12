@@ -1,0 +1,373 @@
+/*=============================
+	Typography css start
+===============================*/
+body {
+    font-family: var(--tc-body-font-family);
+    font-size: var(--tc-body-font-size);
+    font-weight: var(--tc-fw-regular);
+    color: var(--tc-neutral-200);
+    line-height: var(--tc-body-line-height);
+    &.home-page-2 {
+        background: var(--tc-bg-5);
+        font-family: 'DM Mono', monospace;
+        a:hover {
+            color: var(--tc-theme-primary-2);
+            text-decoration: none;
+        }
+    }
+    &.home-page-3 {
+        background: var(--tc-bg-4);
+        font-family: 'Urbanist', sans-serif;
+        font-weight: var(--tc-fw-medium);
+        color: var(--tc-neutral-300);
+
+        a:hover {
+            // color: var(--tc-theme-primary-3);
+            text-decoration: none;
+        }
+    }
+}
+s .fs-1 {
+    font-size: var(--tc-fs-1) !important;
+}
+.fs-2 {
+    font-size: var(--tc-fs-2) !important;
+}
+.fs-3 {
+    font-size: var(--tc-fs-3) !important;
+}
+.fs-4 {
+    font-size: var(--tc-fs-4) !important;
+}
+.fs-5 {
+    font-size: var(--tc-fs-5) !important;
+}
+.fs-6 {
+    font-size: var(--tc-fs-6) !important;
+}
+.fs-7 {
+    font-size: var(--tc-fs-7) !important;
+}
+.fs-8 {
+    font-size: var(--tc-fs-8) !important;
+}
+.fs-9 {
+    font-size: var(--tc-fs-9) !important;
+}
+// fs-custom
+.fs-24 {
+    font-size: 24px;
+}
+.fs-26 {
+    font-size: 26px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-120 {
+    font-size: 120px;
+}
+.fs-150 {
+    font-size: 150px;
+}
+.fs-170 {
+    font-size: 170px !important;
+}
+.fs-50 {
+    font-size: 50px !important;
+}
+.fs-60 {
+    font-size: 60px !important;
+}
+.fs-96 {
+    font-size: 96px !important;
+}
+.fs-230 {
+    font-size: 230px !important;
+}
+.fs-250 {
+    font-size: 250px !important;
+}
+.fs-280 {
+    font-size: 280px !important;
+}
+.fs-300 {
+    font-size: 300px !important;
+}
+// fs-custom
+.ds-1 {
+    font-size: var(--tc-ds-1) !important;
+}
+.ds-2 {
+    font-size: var(--tc-ds-2) !important;
+}
+.ds-3 {
+    font-size: var(--tc-ds-3) !important;
+}
+.ds-4 {
+    font-size: var(--tc-ds-4) !important;
+}
+.ds-5 {
+    font-size: var(--tc-ds-5) !important;
+}
+.ds-6 {
+    font-size: var(--tc-ds-6) !important;
+}
+.h1 {
+    font-size: 60px !important;
+    font-weight: bold;
+}
+.h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.h3 {
+    font-size: 38px;
+    font-weight: bold;
+}
+.h4 {
+    font-size: 31px;
+    font-weight: bold;
+}
+.h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
+// Font Weight
+.fw-light {
+    font-weight: var(--tc-fw-light);
+}
+.fw-regular {
+    font-weight: var(--tc-fw-regular);
+}
+.fw-medium {
+    font-weight: var(--tc-fw-medium);
+}
+.fw-semi-bold {
+    font-weight: var(--tc-fw-semi-bold);
+}
+.fw-bold {
+    font-weight: var(--tc-fw-bold);
+}
+.fw-extra-bold {
+    font-weight: var(--tc-fw-extra-bold);
+}
+.fw-black {
+    font-weight: var(--tc-fw-black);
+}
+.fw .size-16 {
+    width: 16px;
+    height: 16px;
+}
+.size-14 {
+    width: 14px;
+    height: 14px;
+}
+.size-12 {
+    width: 12px;
+    height: 12px;
+}
+.size-22 {
+    width: 22px;
+    height: 22px;
+}
+.size-48 {
+    width: 48px;
+    height: 48px;
+}
+.size-50 {
+    width: 50px;
+    height: 50px;
+}
+.size-75 {
+    width: 75px;
+    height: 75px;
+}
+i {
+    font-size: 24px;
+    line-height: 24px;
+}
+img,
+.img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+a,
+button {
+    color: var(--tc-neutral-0);
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:focus,
+.btn:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+a:hover {
+    color: var(--tc-theme-primary-1);
+    text-decoration: none;
+}
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+}
+.form-control {
+    background: var(--tc-neutral-1000) !important;
+    min-height: 58px !important;
+    color: var(--tc-neutral-0) !important;
+    &::placeholder {
+        color: var(--tc-neutral-400) !important;
+        // opacity: 0.7 !important;
+    }
+    &:focus {
+        border-color: var(--tc-neutral-800) !important;
+        box-shadow: none;
+    }
+}
+body {
+    &.home-page-2 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'DM Mono', monospace;
+            font-weight: var(--tc-fw-medium);
+        }
+        p {
+            font-family: 'DM Mono', monospace;
+            font-weight: var(--tc-fw-regular);
+        }
+    }
+    &.home-page-3 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: var(--tc-fw-regular);
+        }
+        p {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: var(--tc-fw-medium);
+        }
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--tc-heading-font-family);
+    color: var(--tc-neutral-0);
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-weight: var(--tc-fw-bold);
+    line-height: var(--tc-heading-line-height);
+    text-transform: unset;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+h1 {
+    font-size: 49px;
+}
+h2 {
+    font-size: 42px;
+}
+h3 {
+    font-size: 35px;
+}
+h4 {
+    font-size: 29px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 20px;
+}
+.list-wrap {
+    margin: 0px;
+    padding: 0px;
+    & li {
+        list-style: none;
+    }
+}
+p {
+    font-family: var(--tc-body-font-family);
+    font-size: var(--tc-body-font-size);
+    line-height: var(--tc-body-line-height);
+    font-weight: var(--tc-fw-medium);
+    color: var(--tc-neutral-200);
+    margin-bottom: 15px;
+}
+hr {
+    border-bottom: 1px solid var(--tc-color-gray-1);
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+}
+label {
+    color: #000000;
+    cursor: pointer;
+    font-size: var(--tc-body-font-size);
+    font-weight: var(--tc-fw-medium);
+}
+input[type='color'] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 50%;
+}
+/*=============================
+    - Input Placeholder
+===============================*/
+input,
+textarea {
+    color: white;
+}
+*::-moz-placeholder {
+    color: white;
+    font-size: var(--tc-body-font-size);
+    opacity: 1;
+}
+*::placeholder {
+    color: white;
+    font-size: var(--tc-body-font-size);
+    opacity: 1;
+}
+/*=============================
+    - Common Classes
+===============================*/
+.clear {
+    clear: both;
+}

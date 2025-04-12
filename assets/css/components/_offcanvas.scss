@@ -1,0 +1,105 @@
+.offCanvas {
+    &__info {
+        background: var(--tc-neutral-1000) none repeat scroll 0 0;
+        height: 100%;
+        padding: 30px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        width: 340px;
+        z-index: 1500;
+        overflow-y: scroll;
+        transform: translateX(-100%);
+        &.active {
+            transform: translateX(0);
+        }
+        &::-webkit-scrollbar {
+            width: 0px;
+            display: none;
+        }
+        &.style-2 {
+            .offCanvas__side-info {
+                border-top: 1px solid var(--tc-theme-primary-2);
+            }
+            .offCanvas__close-icon button {
+                color: var(--tc-theme-primary-2);
+            }
+        }
+    }
+    &__close-icon {
+        margin-top: -16px;
+        text-align: right;
+        & button {
+            background: transparent;
+            border: 0 none;
+            color: var(--tc-theme-primary-1);
+            cursor: pointer;
+            font-size: 20px;
+            padding: 0;
+        }
+    }
+    &__logo {
+        & img {
+            max-height: 34px;
+        }
+    }
+    &__side-info {
+        border-top: 1px solid var(--tc-theme-primary-1);
+        padding-top: 25px;
+        & .contact-list {
+            & h4 {
+                color: var(--tc-neutral-0);
+                font-weight: 700;
+                font-size: 18px;
+            }
+            & p {
+                color: var(--tc-neutral-200);
+                margin: 0;
+                margin-bottom: 2px;
+                line-height: 26px;
+            }
+        }
+    }
+    &__social-icon {
+        & a {
+            color: var(--tg-theme-primary);
+            display: inline-block;
+            margin-right: 20px;
+            text-align: center;
+            &:hover {
+                color: var(--tc-theme-secondary);
+            }
+        }
+    }
+    &__overly {
+        position: fixed;
+        background: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition-duration: 0.3s;
+        &.active {
+            opacity: 0.7;
+            visibility: visible;
+            transition-duration: 0.3s;
+        }
+    }
+}
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}

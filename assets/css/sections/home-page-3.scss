@@ -1,0 +1,63 @@
+.section-home-3 {
+    .my-services {
+        .card-services {
+            .card__icon {
+                background-color: rgba(178, 164, 171, 0.2);
+            }
+        }
+    }
+    .education {
+        .card-award {
+            .list-style-1 {
+                li {
+                    &::marker {
+                        color: var(--tc-theme-primary-3);
+                    }
+                }
+                .list-style-2 {
+                    list-style: disc;
+                    li {
+                        &::marker {
+                            color: var(--tc-neutral-300);
+                        }
+                    }
+                }
+            }
+            .line-left {
+                --bs-border-color: var(--tc-neutral-0);
+                opacity: 0.5;
+            }
+        }
+    }
+    .services {
+        .card-services {
+            .image-right {
+                min-width: 164px;
+            }
+        }
+    }
+    .swiper-pagination {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        // opacity: 0.3;
+        background: var(--tc-neutral-300);
+        border-radius: 50%;
+    }
+    .swiper-pagination-bullet-active {
+        width: 8px;
+        height: 8px;
+        text-align: center;
+        line-height: 8px;
+        font-size: 8px;
+        color: #000;
+        // opacity: 1;
+        color: #fff;
+        background: var(--tc-theme-primary-3);
+    }
+}

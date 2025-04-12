@@ -1,0 +1,170 @@
+/*=============================
+Preloader
+===============================*/
+#preloader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: #1f1f24;
+    .loader-cover {
+        .loader-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            //style 1
+            .loader-icon {
+                width: 30px;
+                aspect-ratio: 1.154;
+                position: relative;
+                background: conic-gradient(from 120deg at 50% 64%, #0000, #62a92b 1deg 120deg, #0000 121deg);
+                animation: l27-0 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+            }
+            .loader-icon:before,
+            .loader-icon:after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: inherit;
+                transform-origin: 50% 66%;
+                animation: l27-1 1.5s infinite;
+            }
+            .loader-icon:after {
+                --s: -1;
+            }
+            //style-2
+            .loader-icon-2 {
+                width: fit-content;
+                font-weight: bold;
+                font-family: monospace;
+                font-size: 20px;
+                color: #0000;
+                overflow: hidden;
+                animation: l9 5s infinite cubic-bezier(0.3, 1, 0, 1);
+            }
+            .loader-icon-2:before {
+                content: 'Loading...';
+            }
+            //style-3
+            .loader-icon-3 {
+                height: 15px;
+                width: 60px;
+                --c: no-repeat repeating-linear-gradient(#0000 0 6px, #be6895 0 9px, #0000 0 15px);
+                background: var(--c), var(--c), var(--c), var(--c);
+                background-size: 26% 200%;
+                animation: l4 1.5s infinite linear;
+            }
+        }
+    }
+}
+@keyframes l27-0 {
+    0%,
+    30% {
+        transform: rotate(0);
+    }
+    70% {
+        transform: rotate(120deg);
+    }
+    70.01%,
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes l27-1 {
+    0% {
+        transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+    }
+    30%,
+    70% {
+        transform: rotate(calc(var(--s, 1) * 120deg)) translate(calc(var(--s, 1) * -2px), 5px);
+    }
+    100% {
+        transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+    }
+}
+@keyframes l9 {
+    0% {
+        text-shadow:
+            0 0 #fcd34e,
+            11ch 0 #62a92b,
+            22ch 0 #f778ba,
+            33ch 0 #00a0b0,
+            44ch 0 #fcd34e;
+    }
+    25% {
+        text-shadow:
+            -11ch 0 #fcd34e,
+            0ch 0 #62a92b,
+            11ch 0 #f778ba,
+            22ch 0 #00a0b0,
+            33ch 0 #fcd34e;
+    }
+    50% {
+        text-shadow:
+            -22ch 0 #fcd34e,
+            -11ch 0 #62a92b,
+            0ch 0 #f778ba,
+            11ch 0 #00a0b0,
+            22ch 0 #fcd34e;
+    }
+    75% {
+        text-shadow:
+            -33ch 0 #fcd34e,
+            -22ch 0 #62a92b,
+            -11ch 0 #f778ba,
+            0ch 0 #00a0b0,
+            11ch 0 #fcd34e;
+    }
+    100% {
+        text-shadow:
+            -44ch 0 #fcd34e,
+            -33ch 0 #62a92b,
+            -22ch 0 #f778ba,
+            -11ch 0 #00a0b0,
+            0ch 0 #fcd34e;
+    }
+}
+@keyframes l4 {
+    0%,
+    70%,
+    100% {
+        background-position:
+            calc(0 * 100% / 3) 100%,
+            calc(1 * 100% / 3) 100%,
+            calc(2 * 100% / 3) 100%,
+            calc(3 * 100% / 3) 100%;
+    }
+    17.5% {
+        background-position:
+            calc(0 * 100% / 3) 0,
+            calc(1 * 100% / 3) 100%,
+            calc(2 * 100% / 3) 100%,
+            calc(3 * 100% / 3) 100%;
+    }
+    35% {
+        background-position:
+            calc(0 * 100% / 3) 0,
+            calc(1 * 100% / 3) 0,
+            calc(2 * 100% / 3) 100%,
+            calc(3 * 100% / 3) 100%;
+    }
+    52.5% {
+        background-position:
+            calc(0 * 100% / 3) 0,
+            calc(1 * 100% / 3) 0,
+            calc(2 * 100% / 3) 0,
+            calc(3 * 100% / 3) 100%;
+    }
+    69.99% {
+        background-position:
+            calc(0 * 100% / 3) 0,
+            calc(1 * 100% / 3) 0,
+            calc(2 * 100% / 3) 0,
+            calc(3 * 100% / 3) 0;
+    }
+}

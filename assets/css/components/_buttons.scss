@@ -1,0 +1,394 @@
+/*Scroll to top*/
+.btn-scroll-top {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0.1rem rgba(227, 229, 233, 0.25);
+    z-index: 1010;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.75rem);
+    transition:
+        all 0.2s linear,
+        margin-right 0s;
+    background-color: var(--tc-theme-primary-1);
+    &:after {
+        position: absolute;
+        font-family: 'remixicon';
+        content: '\ea76';
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        color: var(--tc-neutral-1000);
+        left: 0;
+        top: 0;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+        transition: all 0.2s linear;
+    }
+    &.active-progress {
+        visibility: visible;
+        transform: translateY(0);
+        @media (min-width: 320px) {
+            opacity: 1;
+        }
+    }
+    & svg path {
+        fill: none;
+    }
+    & svg.progress-square path {
+        stroke: var(--tc-neutral-0);
+        stroke-width: 1;
+        box-sizing: border-box;
+        transition: all 0.2s linear;
+    }
+    &.style-btn-2 {
+        background-color: var(--tc-bg-3);
+        &:after {
+            color: var(--tc-theme-primary-2);
+        }
+        & svg.progress-square path {
+            stroke: var(--tc-theme-primary-2);
+        }
+    }
+    &.style-btn-3 {
+        background-color: var(--tc-bg-3);
+        &:after {
+            color: var(--tc-theme-primary-3);
+        }
+        & svg.progress-square path {
+            stroke: var(--tc-theme-primary-3);
+        }
+    }
+}
+.btn {
+    --bs-btn-padding-x: 24px;
+    --bs-btn-padding-y: 17px;
+    --bs-btn-font-family: 'Urbanist', sans-serif;
+    --bs-btn-font-size: 14px;
+    --bs-btn-font-weight: 700;
+    --bs-btn-line-height: 14px;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: var(--bs-border-width);
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 15px;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background: var(--bs-btn-bg);
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn-filter {
+    --bs-btn-padding-x: 17px;
+    --bs-btn-padding-y: 14px;
+    --bs-btn-font-size: 16px;
+    --bs-btn-font-weight: 600;
+    --bs-btn-line-height: 1;
+    --bs-btn-color: var(--tc-neutral-0);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--tc-neutral-1000);
+    --bs-btn-hover-bg: var(--tc-linear-1);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--tc-linear-1);
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    border-radius: 12px !important;
+    border: 0 !important;
+    &.active {
+        color: var(--bs-btn-active-color);
+        background: var(--bs-btn-active-bg);
+        border-color: var(--bs-btn-active-border-color);
+    }
+    &:hover {
+        color: var(--bs-btn-active-color);
+        background: var(--bs-btn-active-bg);
+        border-color: var(--bs-btn-active-border-color);
+    }
+}
+.btn-gradient {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--tc-linear-1);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--tc-linear-1);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--tc-linear-1);
+    --bs-btn-active-border-color: var(--tc-linear-1);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--tc-neutral-0);
+    --bs-btn-disabled-bg: var(--tc-theme-primary-1);
+    --bs-btn-disabled-border-color: var(--tc-theme-primary-1);
+}
+.btn-primary {
+    --bs-btn-color: var(--tc-neutral-1000);
+    --bs-btn-bg: var(--tc-theme-primary-1);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: var(--tc-neutral-1000);
+    --bs-btn-hover-bg: var(--tc-theme-primary-1);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--tc-neutral-0);
+    --bs-btn-active-bg: var(--tc-theme-primary-1);
+    --bs-btn-active-border-color: var(--tc-theme-primary-1);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--tc-neutral-0);
+    --bs-btn-disabled-bg: var(--tc-theme-primary-1);
+    --bs-btn-disabled-border-color: var(--tc-theme-primary-1);
+}
+.btn-primary-2 {
+    --bs-btn-color: var(--tc-neutral-1000);
+    --bs-btn-bg: var(--tc-theme-primary-2);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: var(--tc-neutral-1000);
+    --bs-btn-hover-bg: var(--tc-theme-primary-2);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--tc-neutral-0);
+    --bs-btn-active-bg: var(--tc-theme-primary-2);
+    --bs-btn-active-border-color: var(--tc-theme-primary-2);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--tc-neutral-0);
+    --bs-btn-disabled-bg: var(--tc-theme-primary-2);
+    --bs-btn-disabled-border-color: var(--tc-theme-primary-2);
+}
+.btn-secondary-3 {
+    --bs-btn-color: var(--tc-neutral-0);
+    --bs-btn-bg: var(--tc-theme-secondary-3);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: var(--tc-neutral-0);
+    --bs-btn-hover-bg: var(--tc-theme-secondary-3);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--tc-neutral-0);
+    --bs-btn-active-bg: var(--tc-theme-secondary-3);
+    --bs-btn-active-border-color: var(--tc-theme-secondary-3);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--tc-neutral-0);
+    --bs-btn-disabled-bg: var(--tc-theme-secondary-3);
+    --bs-btn-disabled-border-color: var(--tc-theme-secondary-3);
+}
+.btn-outline-secondary {
+    --bs-btn-color: var(--tc-neutral-0);
+    --bs-btn-bg: var(--tc-neutral-1000);
+    --bs-btn-border-color: var(--tc-theme-primary-1);
+    --bs-btn-hover-color: var(--tc-neutral-0);
+    --bs-btn-hover-bg: var(--tc-neutral-1000);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: var(--tc-neutral-0);
+    --bs-btn-active-bg: var(--tc-neutral-900);
+    --bs-btn-active-border-color: var(--tc-neutral-900);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    background:
+        linear-gradient(var(--tc-neutral-1000), var(--tc-neutral-1000)) padding-box,
+        (var(--tc-linear-1)) border-box;
+    border: 1px solid transparent;
+}
+.btn-outline-secondary-3 {
+    --bs-btn-color: var(--tc-neutral-0);
+    --bs-btn-bg: var(--tc-neutral-1000);
+    --bs-btn-border-color: var(--tc-theme-secondary-3);
+    --bs-btn-hover-color: var(--tc-neutral-0);
+    --bs-btn-hover-bg: var(--tc-neutral-1000);
+    --bs-btn-hover-border-color: var(--tc-theme-secondary-3);
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: var(--tc-neutral-0);
+    --bs-btn-active-bg: var(--tc-neutral-900);
+    --bs-btn-active-border-color: var(--tc-neutral-900);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+// Avatar
+$avatar-size-xs: 1.5rem !default;
+$avatar-size-sm: 2rem !default;
+$avatar-size-md: 2.5rem !default;
+$avatar-size-lg: 3.5rem !default;
+$avatar-size-xl: 5rem !default;
+$avatar-size-xxl: 7rem !default;
+// Avatar
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+// Avatar Size
+.avatar-xs {
+    width: $avatar-size-xs;
+    height: $avatar-size-xs;
+}
+.avatar-sm {
+    width: $avatar-size-sm;
+    height: $avatar-size-sm;
+}
+.avatar-md {
+    width: $avatar-size-md;
+    height: $avatar-size-md;
+}
+.avatar-lg {
+    width: $avatar-size-lg;
+    height: $avatar-size-lg;
+}
+.avatar-xl {
+    width: $avatar-size-xl;
+    height: $avatar-size-xl;
+}
+.avatar-xxl {
+    width: $avatar-size-xxl;
+    height: $avatar-size-xxl;
+}
+// Icon
+$icon-size-xxs: 1rem !default;
+$icon-size-xs: 1.5rem !default;
+$icon-size-sm: 2rem !default;
+$icon-size-md: 2.5rem !default;
+$icon-size-lg: 3rem !default;
+$icon-size-xl: 3.5rem !default;
+$icon-size-xxl: 4rem !default;
+$icon-size-xxxl: 7rem !default;
+.icon-xl {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+// Icon shape
+.icon-xxs {
+    width: $icon-size-xxs;
+    height: $icon-size-xxs;
+    line-height: $icon-size-xxs;
+}
+.icon-xs {
+    width: $icon-size-xs;
+    height: $icon-size-xs;
+    line-height: $icon-size-xs;
+}
+.icon-sm {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+    line-height: $icon-size-sm;
+}
+.icon-md {
+    width: $icon-size-md;
+    height: $icon-size-md;
+    line-height: $icon-size-md;
+}
+.icon-lg {
+    width: $icon-size-lg;
+    height: $icon-size-lg;
+    line-height: $icon-size-lg;
+}
+.icon-xl {
+    width: $icon-size-xl;
+    height: $icon-size-xl;
+    line-height: $icon-size-xl;
+}
+.icon-xxl {
+    width: $icon-size-xxl;
+    height: $icon-size-xxl;
+    line-height: $icon-size-xxl;
+}
+.icon-xxxl {
+    width: $icon-size-xxxl;
+    height: $icon-size-xxxl;
+    line-height: $icon-size-xxxl;
+}
+.icon_50 {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.icon_60 {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+.icon_65 {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+}
+.icon_80 {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+.icon_115 {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+}
+.icon_160 {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+}
+.icon_150 {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+.icon_140 {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+}
+.icon_hover {
+    cursor: pointer;
+    span {
+        transition: all 0.5s ease;
+    }
+    p {
+        color: var(--tc-neutral-0) !important;
+        transition: all 0.5s ease;
+        i {
+            color: var(--tc-neutral-0) !important;
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover {
+        span {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
